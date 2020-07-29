@@ -8,6 +8,7 @@ import App from './components/App'
 import reducers from './reducers'
 
 //! Hooking up a thunk to a middlewear store
+//! the actions will be sent to thunk then to reducers
 const store = createStore(reducers, applyMiddleware(thunk))
 
 ReactDOM.render(
